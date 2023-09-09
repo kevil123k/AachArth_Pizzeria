@@ -1,0 +1,252 @@
+body {
+    font-family: 'Croissant One', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("bg-body.jpg");
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+header {
+    color: white;
+    text-align: center;
+    padding: 1px;
+    position: relative;
+}
+
+header img {
+    max-width: 100%;
+    max-height: 150px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    backdrop-filter: blur(0px);
+    animation: glowing 2s infinite;
+}
+
+header h1 {
+    font-family: "Comic Sans MS", serif;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding-left: 10px;
+    backdrop-filter: blur(5px);
+}
+
+header p {
+    font-family: "monospace", monospace;
+    backdrop-filter: blur(5px);
+}
+
+section {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+    font-family: "Felix Titling";
+    padding-left: 550px;
+    animation: glowing 2s infinite;
+}
+
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #e7b215, 0 0 30px #ff5733;
+    }
+    50% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff5733, 0 0 40px #ffc100;
+    }
+    100% {
+        text-shadow: 0 0 10px #ffc200, 0 0 20px #ff5733, 0 0 30px #ff5733;
+    }
+}
+
+section li {
+    color: white;
+    animation: glowing 2s infinite;
+}
+
+.collapsible-content ul {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.collapsible {
+  background-color: transparent;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+}
+
+div .content {
+    font-family: "Leelawadee UI", serif;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+    background: transparent;
+}
+
+
+.menu-container {
+  display: grid;
+  flex-wrap: wrap;
+  overflow-x: inherit;
+}
+.menu-item {
+   border: 1px solid transparent;
+  padding: 10px;
+  background-color: linear-gradient(135deg, #FFFF00, #FFA500);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  min-width: 150px;
+  margin-right: 10px;
+  transition: border 0.3s;
+}
+
+.menu-container.row-2 {
+    display: block; /* Make buttons stack vertically in a new row */
+    margin-top: 20px; /* Add some space between the two rows */
+}
+
+
+.active, .collapsible:hover {
+  border: 1px solid rgba(255, 215, 0, 0.5);
+}
+
+button1.collapsible {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 190px;
+  height: 80px;
+  text-align: left;
+  display: block;
+  align-items: center;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+button.collapsible {
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 190px;
+  height: 80px;
+  text-align: center;
+  display: block;
+  align-items: center;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+
+button img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Style for the "Order Now" button */
+.order-button {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed for spacing */
+}
+
+.order-button a {
+  display: inline-block;
+    margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #FF5733; /* Button background color */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underlines from the link */
+  border-radius: 5px; /* Rounded corners for the button */
+  font-weight: bold;
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.order-button a:hover {
+  background-color: #FF4500; /* Change background color on hover */
+}
+
+/* Style for the "Send Order via WhatsApp" button */
+.message-input {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin as needed for spacing */
+    margin-bottom: 20px;
+}
+
+.message-input input[type="text"] {
+  padding: 10px;
+  width: 60%; /* Adjust the width as needed */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Add some spacing between input and button */
+}
+
+.message-input button {
+  padding: 10px 20px;
+  background-color: #FF5733; /* Button background color */
+  color: white; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth hover effect */
+}
+
+.message-input button:hover {
+  background-color: #FF4500; /* Change background color on hover */
+}
+
+/* Style for the "Contact Us" section */
+.contact-info {
+  text-align: center;
+  margin: 30px auto; /* Center the section horizontally */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px); /* Apply backdrop blur */
+  color: white; /* White text color for better visibility */
+  max-width: 400px; /* Adjust the maximum width as needed */
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-info a {
+  color: #FF5733; /* Link color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #FF4500; /* Link color on hover */
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 05px;
+    background-color: #FF4500;
+    color: white;
+}
+
+@font-face {
+    font-family: 'Croissant One';
+    src: local('/font/CroissantOne-Regular.ttf') format('truetype');
+}

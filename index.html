@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>AachArth Pizzeria</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="AachArth Pizzeria">
+        <h1>Welcome to AachArth Pizzeria</h1>
+        <p>Your one-stop destination for delicious pizzas and more!</p>
+        <p>We sell a variety of delicious dishes, including pizza, pasta, Chinese, and more!, Checkout In Menu</p>
+</header>
+
+   <section id="menu">
+
+        <h2> Our Menu</h2>
+
+
+
+<div class="container">
+
+<div class="menu-container">
+  <div class="menu-item">
+      <button type="button" class="collapsible"> <img src="pizza.png" alt="pizza"> Pizzas</button>
+<div class="content">
+    <ul>
+        <li>Margherita Pizza: A simple and classic pizza with fresh tomato sauce, mozzarella cheese, and aromatic basil leaves.</li>
+        <li>Pepperoni Pizza: A savory pizza loaded with tomato sauce, mozzarella cheese, and zesty pepperoni slices.</li>
+        <li>Veggie Supreme Pizza: This pizza is packed with garden-fresh veggies, topped with tomato sauce and mozzarella cheese.</li>
+    </ul>
+</div>
+  </div>
+
+
+  <div class="menu-item">
+<button type="button" class="collapsible"><img src="pasta.png" alt="pasta">Pasta</button>
+<div class="content">
+    <ul>
+        <li>Spaghetti with Tomato Sauce: Enjoy traditional spaghetti tossed in tangy tomato sauce.</li>
+        <li>Creamy Alfredo Pasta: Delight in creamy white sauce pasta with a hint of garlic and Parmesan.</li>
+        <li>Pesto Pasta: Savor fresh basil pesto sauce served on a bed of pasta.</li>
+    </ul>
+</div>
+  </div>
+
+
+  <div class="menu-item">
+<button type="button" class="collapsible"><img src="noodles.png" alt="chinese">Chinese Food</button>
+<div class="content">
+    <ul>
+        <li>Fried Rice : Enjoy flavorful fried rice loaded with veggies.</li>
+        <li>Manchurian : Delight in delicious Manchurian with a tangy twist.</li>
+        <li>Schezwan Noodles: Spice up your meal with spicy and saucy noodles.</li>
+    </ul>
+</div>
+  </div>
+
+  <div class="menu-item">
+<button type="button" class="collapsible"><img src="sandwiches.png" alt="sandwiches">Sandwiches</button>
+<div class="content">
+    <ul>
+        <li>Grilled Cheese Sandwich: Savor crispy and cheesy goodness in every bite.</li>
+        <li>Veggie Delight Sandwich: Experience a medley of fresh veggies in a soft sandwich.</li>
+        <li>Chicken Club Sandwich: Relish a hearty sandwich stacked with chicken and veggies.</li>
+    </ul>
+</div>
+  </div>
+
+        <div class="menu-container">
+  <div class="menu-item">
+<button type="button" class="collapsible"><img src="garlic.png" alt="bread">Garlic Bread</button>
+<div class="content">
+    <ul>
+        <li>Plain Garlic Bread: Enjoy buttery garlic bread for a quick snack.</li>
+        <li>Cheesy Garlic Bread: Savor garlic bread topped with melted cheese.</li>
+    </ul>
+</div>
+  </div>
+</div>
+
+
+  <div class="menu-item">
+<button type="button" class="collapsible"><img src="sweets.png" alt="desserts">Desserts</button>
+<div class="content">
+    <ul>
+        <li>Chocolate Brownies: Experience the fudgy chocolate goodness that melts in your mouth.</li>
+        <li>Vanilla Ice Cream: Relish creamy vanilla ice cream for a sweet ending.</li>
+        <li>Chocolate Lava Cake: Indulge in warm, gooey chocolate indulgence.</li>
+    </ul>
+</div>
+  </div>
+
+  <div class="menu-item">
+<button type="button" class="collapsible"><img src="cola.png" alt="bevarages">Bevarages</button>
+      <div class="content collapsible-content">
+      <ul>
+          <li>Cold Drinks: Quench your thirst with your favorite fizzy drink like Coca-Cola, pepsi and thumbs up.</li>
+          <li>Fruit Punch: Sip on a refreshing blend of tropical fruits.</li>
+          <li>Lemonade: Stay refreshed with zesty and chilled lemonade, perfect for a hot day.</li>
+      </ul>
+      </div>
+  </div>
+    </div>
+</div>
+     <script>
+         let coll = document.getElementsByClassName("collapsible");
+let i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    for (let j = 0; j < coll.length; j++) {
+      if (coll[j] !== this) {
+        coll[j].nextElementSibling.style.display = "none";
+        coll[j].classList.remove("active");
+      }
+    }
+
+    this.classList.toggle("active");
+    let content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+     </script>
+</section>
+
+<div class="order-button">
+  <a href="order.html">Order Now</a>
+</div>
+
+    <footer>
+        <p>&copy; 2023 AachArth Pizzeria</p>
+    </footer>
+
+
+</body>
+</html>

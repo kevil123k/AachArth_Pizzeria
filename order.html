@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>AachArth Pizzeria</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="AachArth Pizzeria">
+        <h1>Welcome to AachArth Pizzeria</h1>
+        <p>Your one-stop destination for delicious pizzas and more!</p>
+        <p>We sell a variety of delicious dishes, including pizza, pasta, Chinese, and more!</p>
+    </header>
+
+    <div class="message-input">
+        <label for="userMessage"></label><input type="text" id="userMessage" placeholder="Write Your Order Here Ex- '1x Margherita Pizza' - 'YOUR ADDRESS' ">
+        <button onclick="sendWhatsAppMessage()">Send Order via WhatsApp</button>
+    </div>
+
+    <!-- JavaScript to Send WhatsApp Message -->
+    <script>
+        function sendWhatsAppMessage() {
+            var userMessage = document.getElementById("userMessage").value;
+            var encodedMessage = encodeURIComponent(userMessage);
+            var whatsappLink = "https://wa.me/918866266882?text=Hello%20AachArth%20Pizzeria%20I%20want%20to%20place%20an%20order%20" + encodedMessage;
+            window.open(whatsappLink, "_blank");
+        }
+    </script>
+
+    <div class="contact-info">
+    <h3>Contact Us</h3>
+    <p>For orders and inquiries:</p>
+    <p>Phone: <a href="tel:+918866266882">+91 88662 66882</a></p>
+</div>
+
+    <footer>
+        <p>&copy; 2023 AachArth Pizzeria</p>
+    </footer>
+</body>
+</html>
