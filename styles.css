@@ -52,7 +52,7 @@ section {
 
 section h2 {
     font-family: "Felix Titling";
-    padding-left: 550px;
+    text-align: center;
     animation: glowing 2s infinite;
 }
 
