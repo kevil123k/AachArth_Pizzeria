@@ -43,6 +43,7 @@ header p {
 }
 
 section {
+    width: auto;
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: contain;
